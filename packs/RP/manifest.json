@@ -1,43 +1,27 @@
 {
-  "format_version": 2,
-  "metadata": {
-    "product_type": "addon"
-  },
-  "header": {
-    "description": "Generated from npx create-mc-bedrock",
-    "name": "plot-addon RP",
-    "uuid": "82caf082-cd31-4d7a-97e0-d6d73c03ab5e",
-    "min_engine_version": [
-      1,
-      21,
-      80
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Generated from npx create-mc-bedrock",
+        "name": "plot-addon RP",
+        "uuid": "82caf082-cd31-4d7a-97e0-d6d73c03ab5e",
+        "min_engine_version": [1, 21, 80],
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "e7820130-454f-45c4-8224-26b3f9545d90",
+            "version": [1, 0, 0],
+            "description": "Generated from npx create-mc-bedrock"
+        }
     ],
-    "version": [
-      1,
-      0,
-      0
+    "dependencies": [
+        {
+            "uuid": "ed2a6e80-a853-446d-8ff7-615bab0ddfa3",
+            "version": [1, 0, 0]
+        }
     ]
-  },
-  "modules": [
-    {
-      "type": "resources",
-      "uuid": "e7820130-454f-45c4-8224-26b3f9545d90",
-      "version": [
-        1,
-        0,
-        0
-      ],
-      "description": "Generated from npx create-mc-bedrock"
-    }
-  ],
-  "dependencies": [
-    {
-      "uuid": "ed2a6e80-a853-446d-8ff7-615bab0ddfa3",
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ]
 }

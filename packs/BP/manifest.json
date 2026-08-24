@@ -1,59 +1,39 @@
 {
-  "format_version": 2,
-  "metadata": {
-    "product_type": "addon"
-  },
-  "header": {
-    "description": "Generated from npx create-mc-bedrock",
-    "name": "plot-addon BP",
-    "uuid": "ed2a6e80-a853-446d-8ff7-615bab0ddfa3",
-    "min_engine_version": [
-      1,
-      21,
-      80
+    "format_version": 2,
+    "metadata": {
+        "product_type": "addon"
+    },
+    "header": {
+        "description": "Generated from npx create-mc-bedrock",
+        "name": "plot-addon BP",
+        "uuid": "ed2a6e80-a853-446d-8ff7-615bab0ddfa3",
+        "min_engine_version": [1, 21, 80],
+        "version": [1, 0, 0]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "0db73f8c-9075-4dce-9460-2c4b7fcfe17c",
+            "version": [1, 0, 0],
+            "description": "Generated from npx create-mc-bedrock"
+        },
+        {
+            "type": "script",
+            "language": "javascript",
+            "entry": "scripts/main.js",
+            "uuid": "3544ad25-6f2d-434f-b489-4e54d554445a",
+            "version": [1, 0, 0],
+            "description": "Generated from npx create-mc-bedrock"
+        }
     ],
-    "version": [
-      1,
-      0,
-      0
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.19.0"
+        },
+        {
+            "uuid": "82caf082-cd31-4d7a-97e0-d6d73c03ab5e",
+            "version": [1, 0, 0]
+        }
     ]
-  },
-  "modules": [
-    {
-      "type": "data",
-      "uuid": "0db73f8c-9075-4dce-9460-2c4b7fcfe17c",
-      "version": [
-        1,
-        0,
-        0
-      ],
-      "description": "Generated from npx create-mc-bedrock"
-    },
-    {
-      "type": "script",
-      "language": "javascript",
-      "entry": "scripts/main.js",
-      "uuid": "3544ad25-6f2d-434f-b489-4e54d554445a",
-      "version": [
-        1,
-        0,
-        0
-      ],
-      "description": "Generated from npx create-mc-bedrock"
-    }
-  ],
-  "dependencies": [
-    {
-      "module_name": "@minecraft/server",
-      "version": "1.19.0"
-    },
-    {
-      "uuid": "82caf082-cd31-4d7a-97e0-d6d73c03ab5e",
-      "version": [
-        1,
-        0,
-        0
-      ]
-    }
-  ]
 }

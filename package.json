@@ -31,7 +31,17 @@
         "deploy": "bedrock-build deploy",
         "deploy:watch": "bedrock-build deploy --watch",
         "pack": "bedrock-build pack",
-        "release": "bedrock-build build --release"
+        "release": "bedrock-build build --release",
+        "prepare": "bunx husky"
+    },
+    "lint-staged": {
+        "**/*.{ts,json,jsonc,json5,md}": [
+            "bunx prettier --write --ignore-unknown",
+            "bunx eslint --fix"
+        ],
+        "**/*.{yml,yaml}": [
+            "bunx prettier --write --ignore-unknown"
+        ]
     },
     "dependencies": {
         "@minecraft/server": "^2.9.0",
@@ -44,9 +54,11 @@
         "@keyyard/bedrock-build": "^3.0.0",
         "eslint": "^10.9.0",
         "globals": "^17.11.0",
+        "husky": "^9.1.7",
         "jiti": "^2.7.0",
+        "lint-staged": "^17.3.0",
         "prettier": "^3.9.6",
-        "typescript": "^7.0.2",
+        "typescript": "6",
         "typescript-eslint": "^8.67.0"
     }
 }
