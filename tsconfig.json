@@ -23,8 +23,7 @@
         "esModuleInterop": true,
 
         // Output & root directory options.
-        "outDir": "./dist",
-        "rootDir": "./src"
+        "outDir": "./dist"
     },
     "include": ["src/**/*.ts", "eslint.config.ts"],
     "exclude": ["node_modules/", "dist/"]
