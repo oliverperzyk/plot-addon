@@ -1,15 +1,16 @@
 {
     "type": "minecraftBedrock",
-    "name": "plot-addon",
-    "authors": [],
-    "targetVersion": "1.21.0",
+    "name": "@oliverperzyk/plot-addon",
+    "authors": ["oliverperzyk (Oliwier Perzyński) <olek@oliverperzyk.com>"],
+    "targetVersion": "1.26.50",
     "packs": {
         "behaviorPack": "packs/BP",
         "resourcePack": "packs/RP"
     },
     "bedrock-cli": {
+        "namespace": "oliverperzyk",
         "version": "1.0.0",
-        "entry": "src/main.ts",
+        "entry": "src/Main.ts",
         "out": "dist",
         "deploy": {
             "target": "retail",

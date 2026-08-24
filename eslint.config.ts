@@ -45,14 +45,14 @@ export default defineConfig([
                     varsIgnorePattern: "^_{1,2}",
                 },
             ],
-            "no-unused-vars": [
-                "error",
-                {
-                    argsIgnorePattern: "^_{1,2}",
-                    varsIgnorePattern: "^_{1,2}",
-                },
-            ],
+            "no-unused-vars": "off",
         },
+    },
+    {
+        files: ["**/*.json"],
+        plugins: { json },
+        language: "json/json",
+        extends: ["json/recommended"],
     },
     {
         files: ["**/*.jsonc"],
