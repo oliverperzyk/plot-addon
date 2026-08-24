@@ -7,7 +7,7 @@
 class Main {
     /**
      * @summary Private constructor.
-     * @description Prevents instantiation & inheritance.
+     * @description Prevents instantiation & inheritance of the class.
      */
     private constructor() {}
 
