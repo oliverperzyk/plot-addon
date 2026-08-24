@@ -1,0 +1,29 @@
+{
+  "name": "plot-addon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "folders": "bedrock-build folders",
+    "build": "bedrock-build build",
+    "watch": "bedrock-build watch",
+    "deploy": "bedrock-build deploy",
+    "deploy:watch": "bedrock-build deploy --watch",
+    "pack": "bedrock-build pack",
+    "release": "bedrock-build build --release",
+    "create:weapon": "bedrock-build create weapon",
+    "create:tool": "bedrock-build create tool",
+    "create:armor": "bedrock-build create armor",
+    "create:item": "bedrock-build create item",
+    "create:entity": "bedrock-build create entity",
+    "create:block": "bedrock-build create block"
+  },
+  "dependencies": {
+    "@minecraft/server": "^2.9.0",
+    "@minecraft/server-ui": "^2.1.0"
+  },
+  "devDependencies": {
+    "@keyyard/bedrock-build": "^3.0.0",
+    "typescript": "^7.0.2"
+  }
+}
