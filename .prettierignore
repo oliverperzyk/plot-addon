@@ -1,0 +1,23 @@
+# IDE files.
+/**/.idea/
+/**/.vscode/
+/**/.cursor/
+# AI files.
+/**/.openai/
+/**/.anthropic/
+/**/.claude/
+
+# Packages & distribution files.
+/**/node_modules/
+/**/dist/
+/**/build/
+/**/*.tsbuildinfo*
+# Lockfiles.
+/**/package-lock.json
+/**/bun.lock
+/**/yarn.lock
+/**/pnpm-lock.yaml
+
+# Operating system files.
+/**/.DS_Store
+/**/*.ini
