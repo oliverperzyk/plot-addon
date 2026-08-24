@@ -1,0 +1,14 @@
+#!/bin/bash
+# This file is being executed before commiting changes via git to validate commit's message.
+# It's used to make sure that the commit message follows the Conventional Commits specification.
+# See https://www.conventionalcommits.org/en/v1.0.0/ for more information.
+
+message="$(sed -n '1p' "$1")"
+
+if printf "%s" "$message" | grep -Eq '^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\(.+\))?!?: .+'; then
+    exit 0
+fi
+
+echo "Message is not valid. Please follow the Conventional Commits specification."
+echo "Example: 'feat(db): add support for PostgreSQL'"
+exit 1
