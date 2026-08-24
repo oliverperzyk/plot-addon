@@ -1,13 +1,16 @@
 {
     "format_version": 2,
     "metadata": {
-        "product_type": "addon"
+        "product_type": "addon",
+        "license": "AGPL-3.0",
+        "url": "https://oliverperzyk.com",
+        "authors": ["oliverperzyk (Oliwier Perzyński) <olek@oliverperzyk.com>"]
     },
     "header": {
-        "description": "Generated from npx create-mc-bedrock",
-        "name": "plot-addon BP",
+        "name": "pack.name",
+        "description": "pack.description",
         "uuid": "ed2a6e80-a853-446d-8ff7-615bab0ddfa3",
-        "min_engine_version": [1, 21, 80],
+        "min_engine_version": [1, 26, 50],
         "version": [1, 0, 0]
     },
     "modules": [
@@ -15,7 +18,7 @@
             "type": "data",
             "uuid": "0db73f8c-9075-4dce-9460-2c4b7fcfe17c",
             "version": [1, 0, 0],
-            "description": "Generated from npx create-mc-bedrock"
+            "description": "pack.description"
         },
         {
             "type": "script",
@@ -23,13 +26,17 @@
             "entry": "scripts/main.js",
             "uuid": "3544ad25-6f2d-434f-b489-4e54d554445a",
             "version": [1, 0, 0],
-            "description": "Generated from npx create-mc-bedrock"
+            "description": "pack.description"
         }
     ],
     "dependencies": [
         {
             "module_name": "@minecraft/server",
-            "version": "1.19.0"
+            "version": "beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "beta"
         },
         {
             "uuid": "82caf082-cd31-4d7a-97e0-d6d73c03ab5e",

@@ -10,8 +10,8 @@
         "resolveJsonModule": true,
         "allowJs": true,
         "checkJs": false,
-        "outDir": "dist",
-        "rootDir": "src"
+        "outDir": "./dist",
+        "rootDir": "./src"
     },
     "include": ["src/**/*.ts", "eslint.config.ts"],
     "exclude": ["node_modules", "dist"]
