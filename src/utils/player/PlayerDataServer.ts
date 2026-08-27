@@ -74,6 +74,24 @@ class PlayerDataServer {
     public addToProperty(key: string, value: number): void {
         WorldDynamicProperty.addToProperty(`${key}: ${this.playerId}`, value)
     }
+
+    /**
+     * @summary Gets the plot ID.
+     * @description Gets the plot ID from the player's properties.
+     * @returns The plot ID.
+     */
+    public get plotId(): number {
+        return this.getProperty("playerPlotId", 0) as number
+    }
+
+    /**
+     * @summary Sets the plot ID.
+     * @description Sets the plot ID to the player's properties.
+     * @param plotId - The plot ID to set.
+     */
+    public set plotId(plotId: number) {
+        this.setProperty("playerPlotId", plotId)
+    }
 }
 
 export { PlayerDataServer }
