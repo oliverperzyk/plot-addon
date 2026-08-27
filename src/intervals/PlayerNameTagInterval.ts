@@ -23,7 +23,7 @@ class PlayerNameTagInterval {
      * @summary Initializes the interval.
      * @description Runs the interval to update the player's name tag.
      */
-    static {
+    public static init(): void {
         system.runInterval(this.updatePlayersNameTags, this.updateInterval)
     }
 

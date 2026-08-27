@@ -4,3 +4,4 @@ pack.description=Paczka na serwer typu SMP z dzialkami.
 
 ## Chat-related messages.
 chat.cooldown=Poczekaj jeszcze §e%s§f sekund zanim wyslesz kolejna wiadomosc.
+chat.welcome=Witaj na serwerze!\nObecnie gra %s osob.

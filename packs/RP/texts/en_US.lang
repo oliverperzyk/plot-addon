@@ -4,3 +4,4 @@ pack.description=A plot addon for a SMP-like server.
 
 ## Chat-related messages.
 chat.cooldown=Wait for §e%s§f more seconds before sending another message.
+chat.welcome=Welcome on my server!\nThere are %s players on a server.

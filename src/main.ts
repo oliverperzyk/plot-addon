@@ -1,4 +1,6 @@
 import { CustomMessagesInterval } from "./intervals/CustomMessagesInterval"
+import { PlayerNameTagInterval } from "./intervals/PlayerNameTagInterval"
+import { PlayerSpawnAfterEventListener } from "./listeners/after/PlayerSpawnAfterEventListener"
 import { ChatSendBeforeEventListener } from "./listeners/before/ChatSendBeforeEventListener"
 
 /**
@@ -28,8 +30,10 @@ class Main {
     private static async init(): Promise<void> {
         // Intervals.
         CustomMessagesInterval.init()
+        PlayerNameTagInterval.init()
 
         // Listeners.
+        PlayerSpawnAfterEventListener.init()
         ChatSendBeforeEventListener.init()
     }
 }
