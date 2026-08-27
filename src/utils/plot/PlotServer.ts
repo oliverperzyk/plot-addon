@@ -26,6 +26,23 @@ class PlotServer {
     public readonly plotLocation: Vector3
 
     /**
+     * @summary Gets the next plot ID.
+     * @description Gets the next plot ID.
+     * @returns The next plot ID.
+     */
+    public static get nextPlotId(): number {
+        return (WorldDynamicProperty.getProperty("nextPlotId", 0) as number) + 1
+    }
+
+    /**
+     * @summary Moves the next plot ID.
+     * @description Moves the next plot ID by adding 1 to the current next plot ID.
+     */
+    public static moveNextPlotId(): void {
+        WorldDynamicProperty.addToProperty("nextPlotId", 1)
+    }
+
+    /**
      * @summary Constructor.
      * @description Creates a new instance of the PlotServer class.
      * @param plotId - The ID of the plot.
@@ -34,6 +51,15 @@ class PlotServer {
         this.plotId = plotId
         this.plotOwner = new PlayerDataServer(this.getProperty("plotOwnerId") as number)
         this.plotLocation = this.getProperty("plotLocation") as Vector3
+    }
+
+    /**
+     * @summary Gets the center of the plot.
+     * @description Gets the center of the plot.
+     * @returns The center of the plot.
+     */
+    public get center(): Vector3 {
+        return this.getProperty("plotLocation") as Vector3
     }
 
     /**
