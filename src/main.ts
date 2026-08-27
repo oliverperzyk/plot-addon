@@ -3,6 +3,9 @@
  * @description This class initializes the whole add-on's logic.
  * @author oliverperzyk (Oliwier Perzyński) <olek@oliverperzyk.com>
  */
+
+import { CustomMessages } from "./intervals/CustomMessages"
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 class Main {
     /**
@@ -22,5 +25,7 @@ class Main {
      * @summary Initializes the add-on's logic.
      * @description This method is called when the add-on is initialized.
      */
-    private static async init(): Promise<void> {}
+    private static async init(): Promise<void> {
+        CustomMessages.init()
+    }
 }
