@@ -5,7 +5,7 @@ import { ChatConfiguration } from "../config/chat/ChatConfiguration"
  * @summary Sends custom messages.
  * @description A system that is in demand of sending custom messages.
  */
- 
+
 class CustomMessages {
     /**
      * @summary Private constructor.

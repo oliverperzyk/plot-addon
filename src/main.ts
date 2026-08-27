@@ -1,11 +1,11 @@
+import { CustomMessages } from "./intervals/CustomMessages"
+import { ChatSendBeforeEventListener } from "./listeners/before/ChatSendBeforeEventListener"
+
 /**
  * @summary Main class for the add-on.
  * @description This class initializes the whole add-on's logic.
  * @author oliverperzyk (Oliwier Perzyński) <olek@oliverperzyk.com>
  */
-
-import { CustomMessages } from "./intervals/CustomMessages"
-
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 class Main {
     /**
@@ -26,6 +26,10 @@ class Main {
      * @description This method is called when the add-on is initialized.
      */
     private static async init(): Promise<void> {
+        // Intervals.
         CustomMessages.init()
+
+        // Listeners.
+        ChatSendBeforeEventListener.init()
     }
 }

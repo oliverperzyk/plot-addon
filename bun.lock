@@ -5,7 +5,7 @@
     "": {
       "name": "@oliverperzyk/plot-addon",
       "dependencies": {
-        "@minecraft/server": "^2.9.0",
+        "@minecraft/server": "2.10.0-beta.1.26.44-stable",
         "@minecraft/server-ui": "^2.1.0",
       },
       "devDependencies": {
@@ -119,7 +119,7 @@
 
     "@minecraft/common": ["@minecraft/common@1.3.0", "", {}, "sha512-GLT8USFhvEyeTTFHZAgszbrnoT007hmXmK+aO4l+2A1up9/zwZ+4e8R8F0KcKrCWDjLEqkOJtPow0hQCcNJ++Q=="],
 
-    "@minecraft/server": ["@minecraft/server@2.9.0", "", { "peerDependencies": { "@minecraft/common": "^1.2.0", "@minecraft/vanilla-data": ">=1.20.70" } }, "sha512-tzPwJbcXs4H3daAy5v0KldOMUwgSr4cc5x6TpEvsr3Jto9XtvsBcNUVLVdni5NEZCizQ0mzBwnLCXgxyYpR91A=="],
+    "@minecraft/server": ["@minecraft/server@2.10.0-beta.1.26.44-stable", "", { "peerDependencies": { "@minecraft/common": "^1.2.0", "@minecraft/vanilla-data": ">=1.20.70" } }, "sha512-fM1KzY76b7RRlS2ldSj3qDHYtzRYBxK+JKMViW+gLQCTy0GjV1XA6aKBowlFentNLRC4119Qo5KrB2OIHI+Pcw=="],
 
     "@minecraft/server-ui": ["@minecraft/server-ui@2.1.0", "", { "peerDependencies": { "@minecraft/common": "^1.0.0", "@minecraft/server": "^2.0.0" } }, "sha512-7zXyqK6HI62aH0RlfObLitBc7EldpoAH3AeC8JWOaI6CCNoCi2DG2U78ELdq+NrUIjvCE87Bix/I+hgXsQ5AdA=="],
 
