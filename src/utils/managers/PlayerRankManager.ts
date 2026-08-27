@@ -37,6 +37,15 @@ class PlayerRankManager {
     public static resolveRankFromPlayer(player: Player): string {
         return this.resolveRankFromTags(player.getTags())
     }
+
+    /**
+     * @summary Updates the player's name tag.
+     * @description Updates the player's name tag by resolving the rank from the player and adding it to the player's name.
+     * @param player - The player to update the name tag for.
+     */
+    public static updatePlayersNameTag(player: Player): void {
+        player.nameTag = this.resolveRankFromPlayer(player) + " " + player.name
+    }
 }
 
 export { PlayerRankManager }

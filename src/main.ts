@@ -1,4 +1,4 @@
-import { CustomMessages } from "./intervals/CustomMessages"
+import { CustomMessagesInterval } from "./intervals/CustomMessagesInterval"
 import { ChatSendBeforeEventListener } from "./listeners/before/ChatSendBeforeEventListener"
 
 /**
@@ -27,7 +27,7 @@ class Main {
      */
     private static async init(): Promise<void> {
         // Intervals.
-        CustomMessages.init()
+        CustomMessagesInterval.init()
 
         // Listeners.
         ChatSendBeforeEventListener.init()

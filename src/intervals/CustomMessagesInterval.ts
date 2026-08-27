@@ -6,7 +6,7 @@ import { ChatConfiguration } from "../config/chat/ChatConfiguration"
  * @description A system that is in demand of sending custom messages.
  */
 
-class CustomMessages {
+class CustomMessagesInterval {
     /**
      * @summary Private constructor.
      * @description Prevents instantiation & inheritance.
@@ -38,4 +38,4 @@ class CustomMessages {
     }
 }
 
-export { CustomMessages }
+export { CustomMessagesInterval }
